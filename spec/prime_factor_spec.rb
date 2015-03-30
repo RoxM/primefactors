@@ -33,4 +33,7 @@ describe PrimeFactors do
 		expect(PrimeFactors.of(8)).to eq [2,2,2]
 	end
 	
+	it '3,3,3 is returned for 9' do
+		expect(PrimeFactors.of(9)).to eq [3,3,3]
+	end
 end
