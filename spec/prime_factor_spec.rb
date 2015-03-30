@@ -20,4 +20,8 @@ describe PrimeFactors do
 	it '5 is returned for 5' do
 		expect(PrimeFactors.of(5)).to eq [5]
 	end
+	
+	it '2,3 is returned for 6' do
+		expect(PrimeFactors.of(6)).to eq [2,3]
+	end
 end
