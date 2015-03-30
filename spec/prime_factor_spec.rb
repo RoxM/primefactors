@@ -36,4 +36,13 @@ describe PrimeFactors do
 	it '3,3 is returned for 9' do
 		expect(PrimeFactors.of(9)).to eq [3,3]
 	end
+	
+	it '2,5,7,11,13 is returned for 2*5*7*11*13' do
+		expect(PrimeFactors.of(2*5*7*11*13*17*19*23*29*31*37)).to eq [2,5,7,11,13,17,19,23,29,31,37]
+	end
+	
+	it '100 times 2 is returned for 2 factor 100' do
+		expect(PrimeFactors.of(2**100)).to eq [2]*100
+	end
+	
 end
