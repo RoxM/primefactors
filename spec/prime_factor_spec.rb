@@ -9,4 +9,7 @@ describe PrimeFactors do
 		expect(PrimeFactors.of(2)).to eq [2]
 	end
 	
+	it '3 is returned for 3' do
+		expect(PrimeFactors.of(3)).to eq [3]
+	end
 end
