@@ -1,9 +1,7 @@
 module PrimeFactors
 	def self.of(n)
 		factorList = []
-		if n>1
-			factorList << 2
-		end
+		n>1 ? factorList << 2 : factorList
 		return factorList
 	end
 end

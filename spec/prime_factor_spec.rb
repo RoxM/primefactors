@@ -8,4 +8,5 @@ describe PrimeFactors do
 	it '2 is returned for 2' do
 		expect(PrimeFactors.of(2)).to eq [2]
 	end
+	
 end
